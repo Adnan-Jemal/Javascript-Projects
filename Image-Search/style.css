@@ -1,0 +1,138 @@
+*,*::after,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+
+}
+
+.title{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    gap: 20px;
+
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 4px 5px rgba(0,0,0,.1);
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius:10px;
+    font-size: 18px;
+    box-shadow: 0 4px 5px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+}
+
+.btn:hover{
+    background-color: lightgreen;
+}
+
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.result-item{
+    margin-bottom: 60px;
+    width: 30%;
+    border: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0px 5px rgba(0,0,0,.1);
+    overflow: hidden;
+}
+
+.result-item:hover img{
+    transform: scale(1.05);
+}
+
+.result-item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 300ms ease-in-out;
+}
+
+.result-item a{
+    display: block;
+    padding: 10px;
+    color: darkgray;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: background-color  .3s ease-in-out;
+    transition: color .2s ease-in-out;
+    
+}
+
+.result-item:hover a{
+    background-color: lightgreen;
+    color: white;
+}
+
+#show-more{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+    display: none;
+}
+
+#show-more:hover{
+    background-color: lightgreen;
+}
+
+
+
+@media screen and (max-width: 800px){
+     .result-item{
+        width: 45%;
+     }
+}
+@media screen and (max-width: 500px){
+     .result-item{
+        width: 90%;
+     }
+     form{
+        flex-direction: column;
+        
+     }
+     #search-input{
+        width: 100%;
+     }
+}

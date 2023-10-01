@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    text-align: center;
+    background:linear-gradient(to left , lightblue, lightgreen);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkcyan;
+    
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: darkcyan;
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+.app{
+    
+   display: grid;
+   grid-template-columns: repeat(auto-fill,300px);
+   gap: 40px;
+   justify-content: center;
+   padding: 50px;
+}
+.note{
+    background-color: rgba(255,255,255,.4);
+    border: none;
+    padding:17px;
+    border-radius: 16px;
+    resize: none;
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 200px;
+    color: darkcyan;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.note:hover,.note:focus{
+    box-shadow: 0 0 12px rgba(0,0,0,.3);
+    transition: all 300ms ease;
+}
+.note::-webkit-scrollbar{
+    width: 5px;
+}
+.note::-webkit-scrollbar-thumb{
+    background-color: darkcyan;
+    border-radius: 5px;
+}
+.note::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.btn{
+    background-color: rgba(255,255,255,.4);
+    height: 200px;
+    border:none;
+    border-radius: 16px;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(0,0,0,.5);
+}
+
+.btn:hover{
+    background-color: rgba(255,255,255,.55);
+    color: rgba(0,0,0,.8);
+    transition: all 300ms ease;
+}
